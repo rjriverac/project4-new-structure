@@ -14,6 +14,7 @@ PyJWT = "^2.3.0"
 stripe = "^2.63.0"
 django-cors-headers = "^3.10.0"
 python-decouple = "^3.5"
+django-on-heroku = "^1.1.2"
 
 [tool.poetry.dev-dependencies]
 
