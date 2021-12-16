@@ -52,7 +52,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const { data } = await axios.get(`/api/products/${id}`)
+        const { data } = await axios.get(`/api/products/${id}/`)
         setItem(data)
       } catch (error) {
         console.log(error)
@@ -62,7 +62,7 @@ const ProductDetail = () => {
     const getCart = async () => {
       if (userIsAuthenticated()) {
         try {
-          const { data: { order_items: cart, total } } = await axios.get('/api/cart/view',
+          const { data: { order_items: cart, total } } = await axios.get('/api/cart/view/',
             {
               headers: { Authorization: `Bearer ${getTokenFromLocalStorage()}` }
             }
