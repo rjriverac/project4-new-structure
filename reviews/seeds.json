@@ -1,0 +1,112 @@
+[
+{
+  "model": "reviews.review",
+  "pk": 2,
+  "fields": {
+    "rating": 4,
+    "text": "pretty great",
+    "product": 1,
+    "user": 2
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 3,
+  "fields": {
+    "rating": 4,
+    "text": "delish",
+    "product": 4,
+    "user": 3
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 4,
+  "fields": {
+    "rating": 3,
+    "text": "Had better",
+    "product": 4,
+    "user": 5
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 5,
+  "fields": {
+    "rating": 4,
+    "text": "great cookie",
+    "product": 4,
+    "user": 2
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 6,
+  "fields": {
+    "rating": 5,
+    "text": "amazing",
+    "product": 4,
+    "user": 2
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 7,
+  "fields": {
+    "rating": 5,
+    "text": "Delicious and nutritious",
+    "product": 2,
+    "user": 2
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 8,
+  "fields": {
+    "rating": 5,
+    "text": "I wish I knew how to quit you",
+    "product": 7,
+    "user": 2
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 9,
+  "fields": {
+    "rating": 5,
+    "text": "Amazing!",
+    "product": 7,
+    "user": 2
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 10,
+  "fields": {
+    "rating": 5,
+    "text": "Worth the price",
+    "product": 6,
+    "user": 2
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 11,
+  "fields": {
+    "rating": 5,
+    "text": "mmmm",
+    "product": 5,
+    "user": 2
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 12,
+  "fields": {
+    "rating": 5,
+    "text": "the eyes",
+    "product": 6,
+    "user": 2
+  }
+}
+]

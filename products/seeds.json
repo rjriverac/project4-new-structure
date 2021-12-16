@@ -1,0 +1,79 @@
+[
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "name": "Lettuce",
+    "price": "2.00",
+    "food_category": "PR",
+    "big_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/v1638896487/lettuce_fkpbgd.jpg",
+    "small_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/v1638805093/romaine-lettuce-150x150_ir1miz.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "name": "Filet Mignon",
+    "price": "25.00",
+    "food_category": "ME",
+    "big_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/v1638805223/468a62cd09e69b1228eae0baaad202bc_f7a8pf.jpg",
+    "small_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/v1638806226/R.5a0356728c7242dad5f0e5c1c9ef9d88_br504b.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "name": "Yogurt",
+    "price": "5.00",
+    "food_category": "DA",
+    "big_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/v1638805125/yogurt_qfnmin.jpg",
+    "small_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/v1638805170/R.40f7c0fdd624fd29488b6c1491bb6737_zf7vzj.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "name": "Ice Cream Sandwiches",
+    "price": "11.00",
+    "food_category": "DE",
+    "big_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/v1638807437/R_kgncer.jpg",
+    "small_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/v1638807458/R_ighspp.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "name": "Cinnamon Toast Crunch",
+    "price": "8.50",
+    "food_category": "CE",
+    "big_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/v1638804971/1533880423_352_our-favorite-breakfast-cereals-serious-eats_qmjfjd.jpg",
+    "small_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/v1638804950/1d650e177c07f9f206e55f5fb57629b8_q0hkc8.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "name": "Bananas",
+    "price": "10.00",
+    "food_category": "PR",
+    "big_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/v1639133412/DQHCZV6XUAAK1ix_b4bdm4.jpg",
+    "small_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/c_scale,w_150/v1639133452/c0e3dac9-f0d7-4baf-b825-56b674c7220a.0084bc2fdcab02a25ea4dcbc16a864d8_oqpbdv.jpg"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "name": "Chicken Nuggets",
+    "price": "1.00",
+    "food_category": "FR",
+    "big_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/c_scale,w_1200/v1639135841/E7tjX_q9evze.jpg",
+    "small_image": "https://res.cloudinary.com/dkvkg5pxm/image/upload/c_scale,w_200/v1639136070/GZkEM6HS_400x400_hlmx3b.jpg"
+  }
+}
+]
