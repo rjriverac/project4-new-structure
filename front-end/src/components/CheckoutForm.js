@@ -51,7 +51,7 @@ export default function CheckoutForm() {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: 'http://localhost:3000/clear/'
+        return_url: 'https://mycart-dev.herokuapp.com/clear/'
       }
     })
     if (error.type === 'card_error' || error.type === 'validation_error') {
