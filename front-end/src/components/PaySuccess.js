@@ -13,7 +13,7 @@ const PaySuccess = () => {
   useEffect(() => {
     const clearCart = async () => {
       try {
-        const { data: { order_items: cartItems, total } } = await axios.delete('/api/cart/view',
+        const { data: { order_items: cartItems, total } } = await axios.delete('/api/cart/view/',
           {
             headers: { Authorization: `Bearer ${token}` }
           }
