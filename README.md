@@ -8,17 +8,17 @@ Full-stack website built solo over the course of 10 days using a React front end
 
 ![](mycarthome.gif)
 
----
+
 
 ## Brief
----
+
 1. Build a full stack application with a React front end and Django back end.
 2. Build a fully functional RESTful API with all CRUD routes (GET, POST, PUT, DELETE).
 3. Use at least one OneToMany & one ManyToMany relationships.
 4. Custom Authentication.
 
 ## Technologies Used
----
+
 ### Back end
 * Python
 * Poetry
@@ -40,7 +40,7 @@ Full-stack website built solo over the course of 10 days using a React front end
 * Asana (tracking)
 
 ## Approach
----
+
 
 ### Planning
 
@@ -53,7 +53,7 @@ Overall I was also looking to make something with a more minimal, less cluttered
 From there I built a small, separate, one-component React App to get comfortable with Stripe and integrating it (and to gauge if implementing it into this project would take too long to complete).
 
 ### Back end
----
+
 For this app I knew I would need models for the user, products, shopping cart, and reviews as a stretch. My models for the user, products (and eventually, reviews) were relatively straightforward, but the cart was by far the most challenging. The model itself was simple, but its views were where I spent most of my time on the back end.
 
 ```python
@@ -94,8 +94,9 @@ Specifically, adding or removing items via put request, and I ended up needing t
 ```
 
 ### Front end
+---
 
-### Registration
+#### Registration
 Using immediately invoked function expressions in the JSX for the registration form allowed for granular error handling:
 ```jsx
 <Form.Group controlId='username'>
@@ -134,7 +135,7 @@ Using immediately invoked function expressions in the JSX for the registration f
 
 ![](register2.gif)
 
-### Cart
+#### Cart
 
 ![](cart.gif)
 
@@ -174,7 +175,7 @@ Even prior to adding the stripe integration, managing states in React was a chal
                 </Accordion>
 ```
 
-### Reviews
+#### Reviews
 
 ![](review.gif)
 After implementation of the cart, I wanted to flesh out each product with reviews, and having them display instantly. As the back end already was set for accepting a number from 1-5 I was able to use a progress bar and form components to allow for a visually appealing review submission, as well as trigger a re-render of the existing reviews (with an associated query to the back end for the just-submitted review). 
@@ -226,7 +227,7 @@ Displaying the reviews required some error handling/validation to account for pr
           }
 ```
 
-### Payment
+#### Payment
 
 ![](checkout.gif)
 ![](11B72510-DB83-496B-8E52-C93D3F355A2F.png)
@@ -307,26 +308,26 @@ const { error } = await stripe.confirmPayment({
 ```
 
 ## Wins
----
+
 * Payment integration - while I was only using test data, I was pleased that everything worked as expected
 * Conditional renders and help messages - I spent a fair amount of effort coding in error handling to avoid broken components due to API issues, as well as using modals and toast messages to provide user feedback
 * Overall functionality - I had set a lot of goals for myself, and while I did not reach them, I was pleased at how much functionality I was able to include in the site, despite running out of time to polish the design I had in mind.
 	
 ## Challenges
----
+
 * Responsive design - I wanted to try using a new CSS framework, but adapting from what I was used to from my last large project to this one was a much larger challenge than I had expected. Additionally, due to the stripe integration some of the styling elements I had put in were broken
 * Payment integration - this was more of a time sink than a conceptual challenge, as I built a completely separate app to test how difficult it would be to integrate payments. Additionally as mentioned, including it caused some difficulties with styled elements that I had already included.
 * Time management & organization - I struggled to move on when stumped in many cases, which led to a lot of wasted time when compared to how well utilized my time was in previous projects. 
 * Deployment - my initial project structure (and choice of poetry to manage my virtual environment) made deployment to Heroku a bit challenging as I had to re-organize the whole project, and in doing so caused myself some build issues.
 
 ## Key Takeaways
----
+
 
 * Time management & planning - Since I was working on my own for this project, I was less fastidious in updating tracking tools like Asana or a pomodoro timer than in other projects, and as a result there were todo’s that were not prioritized at the right time, or at all. Additionally, as referenced in the challenges above, there was a fair amount of time that could have been utilized better had I moved on from blockers in a more efficient manner.
 * Django & Python - This project was my first using Django/Python, and in particular getting used to class-based views was quite an adjustment as everything I had worked on prior had been functional.  However, the finished result on the back end was something I ended up being very pleased with. 
 
 ## Future Features
----
+
 * Design - In particular, I wanted to implement 2 ways to browse, the 'gallery' approach that made it into the project, and a card-based view that would allow for viewing and searching multiple products at the same time.
 * Account management - allow for changing passwords/account deletion.
 * Styling - There are some issues with the stripe iframe rendering underneath the footer, so given additional time I would go back to fix these and some responsiveness features.
