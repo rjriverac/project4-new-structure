@@ -50,7 +50,7 @@ Overall I was also looking to make something with a more minimal, less cluttered
 
 ![](6FF62B3C-FF1A-4FFD-8847-6D565005FA60.png)
 
-From there I built a small, separate,one-component React App to get comfortable with Stripe and integrating it (and to gauge if implementing it into this project would take too long to complete).
+From there I built a small, separate, one-component React App to get comfortable with Stripe and integrating it (and to gauge if implementing it into this project would take too long to complete).
 
 ### Back end
 ---
@@ -172,7 +172,6 @@ Even prior to adding the stripe integration, managing states in React was a chal
                     )
                   })}
                 </Accordion>
-              </Accordion.Body>
 ```
 
 ### Reviews
@@ -319,3 +318,15 @@ const { error } = await stripe.confirmPayment({
 * Payment integration - this was more of a time sink than a conceptual challenge, as I built a completely separate app to test how difficult it would be to integrate payments. Additionally as mentioned, including it caused some difficulties with styled elements that I had already included.
 * Time management & organization - I struggled to move on when stumped in many cases, which led to a lot of wasted time when compared to how well utilized my time was in previous projects. 
 * Deployment - my initial project structure (and choice of poetry to manage my virtual environment) made deployment to Heroku a bit challenging as I had to re-organize the whole project, and in doing so caused myself some build issues.
+
+## Key Takeaways
+---
+
+* Time management & planning - Since I was working on my own for this project, I was less fastidious in updating tracking tools like Asana or a pomodoro timer than in other projects, and as a result there were todo’s that were not prioritized at the right time, or at all. Additionally, as referenced in the challenges above, there was a fair amount of time that could have been utilized better had I moved on from blockers in a more efficient manner.
+* Django & Python - This project was my first using Django/Python, and in particular getting used to class-based views was quite an adjustment as everything I had worked on prior had been functional.  However, the finished result on the back end was something I ended up being very pleased with. 
+
+## Future Features
+---
+* Design - In particular, I wanted to implement 2 ways to browse, the 'gallery' approach that made it into the project, and a card-based view that would allow for viewing and searching multiple products at the same time.
+* Account management - allow for changing passwords/account deletion.
+* Styling - There are some issues with the stripe iframe rendering underneath the footer, so given additional time I would go back to fix these and some responsiveness features.
