@@ -16,17 +16,19 @@ const App = () => {
   return (
     <>
       <Router>
-        <NavBar />
-        <Switch>
-          <Route exact path='/' component={Home}/>
-          <Route exact path='/register' component={Register}/>
-          <Route exact path='/login' component={Login}/>
-          <Route exact path='/browse' component={Showcase} />
-          <Route exact path='/products/:id' component={ProductDetail}/>
-          <Route exact path='/cart' component={Cart}/>
-          <Route exact path='/clear' component={PaySuccess}/>
-        </Switch>
-        <Footer />
+        <div className='main-wrapper'>
+          <NavBar />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/register' component={Register} />
+            <Route exact path='/login' component={Login} />
+            <Route exact path='/browse' component={Showcase} />
+            <Route exact path='/products/:id' component={ProductDetail} />
+            <Route exact path='/cart' component={Cart} />
+            <Route exact path='/clear' component={PaySuccess} />
+          </Switch>
+          <Footer />
+        </div>
       </Router>
     </>
   )

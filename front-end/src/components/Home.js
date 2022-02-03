@@ -41,7 +41,7 @@ const Home = () => {
 
   return (
     <>
-      <Stack gap={5} id="main-page-container">
+      <Stack gap={5} id="main-page-container" style={{ display: 'flex', flexDirection: 'column', marginTop: '15px' }}>
         <Container
           fluid
           onMouseOver={() => setHover(true)}

@@ -133,3 +133,9 @@
 #thenavbar {
   background-color: #e2e2e2;
 }
+.main-wrapper {
+  display: flex;
+  min-height: calc(100vh - 90px);
+  flex-direction: column;
+}
+

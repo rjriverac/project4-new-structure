@@ -12,7 +12,7 @@ const Footer = () => {
         {`
         #thefooter {
           background-color: #87ba52;
-          position: absolute;
+          // position: absolute;
           width: 100%;
           bottom: 0;
         }

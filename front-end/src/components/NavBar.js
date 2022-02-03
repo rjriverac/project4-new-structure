@@ -24,6 +24,7 @@ const NavBar = () => {
         {`
           #thenavbar {
             background-color: #87ba52;
+            top: 0;
           }
         `}
       </style>
